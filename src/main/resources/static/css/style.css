@@ -1,0 +1,90 @@
+body {
+    background-image: url(../images/pexels-anand-dandekar-1532771.jpg);
+
+}
+
+.contheader {
+    background-color: #161d5c;
+    height: 150px;
+    display: flex;
+    align-items: center;
+
+}
+
+.titulologo {
+
+    width: 30%;
+    height: 100px;
+    margin-right: 60px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.menu {
+
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lista {
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 50px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/linux_penguin_animal_9362.png');
+    background-size: contain;
+}
+
+.secuno {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.firstarticle {
+
+    background-color: rgb(157, 247, 246, );
+    width: 30%;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid rebeccapurple;
+    box-shadow: 2px 2px 2px;
+
+}

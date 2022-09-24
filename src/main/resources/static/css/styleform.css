@@ -1,0 +1,37 @@
+.fi {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 95%;
+}
+
+
+
+.formulario {
+    display: block;
+}
+
+.formulario {
+    width: 25%;
+    height: 550px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 35%;
+    border: 2px solid gray;
+    border-radius: 10px 10px 10px;
+    padding: 10px;
+    background-color: #95b9ef;
+}
+
+#btnSubmit {
+    background-color: rgb(213, 232, 213);
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 100px;
+    border-radius: 10px;
+}

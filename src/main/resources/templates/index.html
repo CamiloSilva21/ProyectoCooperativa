@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <title>Página de prueba</title>
+</head>
+
+<body>
+    <header class="contheader" id="contenca">
+        <div class="titulologo">
+            <h1 class="titulo">Cooperativa de ahorro y crédito</h1>
+            <div class="logo"></div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="lista"> <a th:href="@{cliente}">Consultar clientes</a> </li>
+                <li class="lista"> <a th:href="@{cliente/registrar}">Registrar clientes</a> </li>
+                <li class="lista"> <a href="">Actualizar clientes</a> </li>
+                <li class="lista"> <a href="">Link4</a> </li>
+                <li class="lista"> <a href="">Link5</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div sec:authorize="!isAuthenticated()">
+        <a th:href="@{/oauth2/authorization/auth0}">Log In</a>
+    </div>
+
+    <div sec:authorize="isAuthenticated()">
+        <!--<div th:if="${usuario.getEmail()}=='juancamilosilva1@gmail.com'">
+
+        </div>-->
+        <a th:href="@{/cliente}">Go to the app</a>
+
+    </div>
+
+    <main class="main">
+        <section class="secuno">
+            <article class="firstarticle" id="articulo1">
+                <h2>Subtitulo 1</h2>
+                <img src="images/folderlinux_carpet_9781.png" alt="Imagen folder de mario bros">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tenetur est, error vitae quia
+                    ducimus magnam ipsum rerum beatae nesciunt consectetur? Placeat id enim quasi aliquid eum, possimus
+                    cupiditate sapiente.</p>
+            </article>
+            <article class="firstarticle" id="art2">
+                <h2>Subtitulo2</h2>
+                <img src="images/folderlinux_carpet_9781.png" alt="Imagen folder de mario bros">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati assumenda, facere cumque, libero
+                    at repellendus maxime doloremque, vero beatae ut perferendis magni. Nemo recusandae aperiam natus
+                    numquam, accusamus dolorum doloribus!</p>
+            </article>
+            <article class="firstarticle" id="art3">
+                <h2>Subtitulo3</h2>
+                <img src="images/folderlinux_carpet_9781.png" alt="Imagen folder de mario bros">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati assumenda, facere cumque, libero
+                    at repellendus maxime doloremque, vero beatae ut perferendis magni. Nemo recusandae aperiam natus
+                    numquam, accusamus dolorum doloribus!</p>
+            </article>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/styleform.css}">
+
+</head>
+
+<body>
+    <div class="formulario">
+        <fieldset class="fi">Formulario de registro</fieldset>
+        <br>
+
+        <legend>Actualizar Cliente</legend>
+        <br>
+
+        <form th:action="@{/cliente/actualizar}" th:object="${clienteactualizar}" method="POST" class="frm">
+            <label for="document">Documento</label> <br>
+            <input type="text" placeholder="" id="document" required th:field="*{documento}"> <br> <br>
+
+            <label for="name">Nombres</label> <br>
+            <input type="text" placeholder="" id="name" required th:field="*{nombres}"> <br> <br>
+
+            <label for="lastname">Apellidos</label> <br>
+            <input type="text" name="Correo" id="lastname" placeholder="" required th:field="*{apellidos}"> <br><br>
+
+            <label for="correoelec">Correo electrónico</label> <br>
+            <input type="email" id="correoelec" required th:field="*{correo}"><br> <br>
+
+            <label for="phone">Celular</label> <br>
+            <input type="text" id="phone" required th:field="*{celular}">
+
+            <button type="submit" id="btnSubmit">Enviar</button>
+
+            <button type="submit">Actualizar</button>
+        </form>
+
+        <!-- <a href=""><button>Actualizar</button></a> -->
+    </div>
+
+</body>
+
+</html>

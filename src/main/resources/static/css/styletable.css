@@ -1,0 +1,24 @@
+table {
+    background-color: white;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+th {
+    padding: 5px;
+    background-color: rgb(170, 182, 202);
+    font-style: italic;
+    font-size: 20px;
+    border: 1px solid black;
+
+}
+
+td {
+    font-size: 15px;
+    background-color: rgb(121, 231, 235);
+    border: 1px solid black;
+    padding: 15px;
+}
